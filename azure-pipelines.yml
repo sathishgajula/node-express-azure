@@ -19,7 +19,7 @@ steps:
   displayName: 'npm test'
 
 - task: ArchiveFiles@2
-  displayName: 'Archive files'
+  displayName: 'Archive files ${secretSpice}'
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
